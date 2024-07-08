@@ -7,12 +7,16 @@
     <style>
         h1 {display: none;}
         section {max-width: 1200px; margin: auto; background: black; position: relative; overflow: hidden;}
+        section img {transition: 0.5s;}
+        section:hover img {filter: hue-rotate(70deg) blur(5px); transform: scale(1.1);}
         img {display: block;}
+    
         [alt="girl"] {position: relative; top: 0; margin: 0 0 0 auto; animation: toleft 1.5s both; width: 50%;}
         [alt="splash"] {bottom:1%; left: -2%; position: absolute; animation: toleft2 2s 0.5s both; width: 80%}
         
+        
 
-       /* @keyframes toleft{
+        @keyframes toleft{
             from {margin-right: -100px; opacity:0;}
             to   {margin-right: 0; opacity: 1;}
              }
@@ -20,7 +24,7 @@
              @keyframes toleft2{
             from {left:100px; opacity:0;}
             to   {left: -2%; opacity: 1;}
-             } */
+             }
 
     </style>
 
